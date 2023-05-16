@@ -8,5 +8,18 @@ namespace LemonadeStand
 {
     internal class Day
     {
+        //Member Variables (Has A)
+        public Weather weather;
+        public List<Customer> customers;
+
+
+        //Constructor
+        public Day()
+        {
+            
+        }
+
+        //Member Methods (Can Do)
+
     }
 }

@@ -8,5 +8,10 @@ namespace LemonadeStand
 {
     internal class Customer
     {
+        //Member Variables (Has A)
+
+        //Constructor
+
+        //Member Methods (Can Do)
     }
 }

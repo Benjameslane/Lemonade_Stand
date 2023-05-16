@@ -8,5 +8,20 @@ namespace LemonadeStand
 {
     internal class Weather
     {
+        //Member Variables (Has A)
+        public string condition;
+        public int temeperature;
+        private List<string> weatherConditions;
+        public string predictedForecast;
+
+
+        //Constructor
+        public Weather()
+        {
+            
+        }
+
+
+        //Member Methods (Can Do)
     }
 }
