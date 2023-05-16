@@ -7,25 +7,32 @@ using System.Threading.Tasks;
 namespace LemonadeStand
 {
     internal class Weather
-    {
-        //Member Variables (Has A)
-        public string condition;
-        public int temeperature;
-        private List<string> weatherConditions;
+    {   
+        Random random;
+        public int Temperature;
+        public int TodayTemperature;
+        private string weatherConditions;
         public string predictedForecast;
-
-
-        //Constructor
         public Weather()
         {
-            this.condition = condition;
-            this.temeperature = temeperature;
-            weatherConditions = new List<string> { "Clear Skies", "Cloudy", "Rain" };
+            random = new Random();
+            TodayTemperature = 0;
             predictedForecast = "";
-
         }
-
-
-        //Member Methods (Can Do)
+        public void GetWeatherTemperatureToday()
+        {
+            Temperature = random.Next(50, 90);
+            TodayTemperature = Temperature;
+        }
+        public void GetWeatherForecastToday()
+        {
+            List<string> TypesOfWeather = new List<string> { "Rainy", "Sunny", "Partly Cloudy" };
+            weatherConditions = TypesOfWeather[random.Next(0, 2)];
+            predictedForecast = weatherConditions;
+        }
     }
 }
+
+
+
+
