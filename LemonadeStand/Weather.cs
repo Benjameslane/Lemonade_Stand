@@ -18,7 +18,11 @@ namespace LemonadeStand
         //Constructor
         public Weather()
         {
-            
+            this.condition = condition;
+            this.temeperature = temeperature;
+            weatherConditions = new List<string> { "Clear Skies", "Cloudy", "Rain" };
+            predictedForecast = "";
+
         }
 
 
